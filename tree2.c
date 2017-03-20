@@ -26,7 +26,7 @@ treenode *t;
 		return 0;
 	}
 	count++;
-	printf("%d:%c\n",count,t->id);
+	printf("%d:%d\n",count,t->id);
 	preorder(t->left);
 	preorder(t->right);
 }
@@ -40,11 +40,11 @@ char **argv, **envp;
 	treenode *t;
 	t = malloc(7*sizeof(treenode));
 
-	char lid = 'a';
+	int lid = 101;
 
-	for(int i; i<6; i++){
+	for(int i = 0; i<7; i++){
 		t[i].id = lid;
-		lid ++;
+		lid++;
 	}
 
 	t[0].left = &(t[1]);

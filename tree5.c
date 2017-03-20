@@ -9,11 +9,14 @@ typedef struct node {
 	struct node *right;
 } treenode;
 
-
+typedef struct node{
+	treenode *t;
+}Q;
 /* FILL ME in */
 breadthFirst(t)
 treenode *t;
 {
+
 }
 
 

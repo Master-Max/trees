@@ -10,7 +10,7 @@ typedef struct node {
 } treenode;
 
 
-main (argc, argv, envp)
+int main (argc, argv, envp)
 int argc;
 char **argv, **envp;
 {
@@ -42,6 +42,8 @@ char **argv, **envp;
 
 	n[4].left = 0;
 	n[4].right = 0;
+
+	return 0;
 
 
 /* manually create nodes to build this tree:
